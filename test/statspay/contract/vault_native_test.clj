@@ -24,6 +24,13 @@
 
 (defonce ^:dynamic *contract-address* nil)
 
+(comment
+  (h/port:check-available 8545)
+  (h/port:get-available [8545])
+  
+  (h/port:check-available 8080)
+  )
+
 (defn prep-contract
   []
   (do (s/rt:deploy t/+default-contract+)

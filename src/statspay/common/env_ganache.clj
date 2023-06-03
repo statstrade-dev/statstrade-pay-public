@@ -72,7 +72,9 @@
   {:added "4.0"}
   [& [cmd]]
   (or @*server*
-      (when (h/port:check-available +default-port+)
+      (when  (not (h/suppress
+                   (h/wait-for-port "127.0.0.1" +default-port+
+                                    {:timeout 1000})))
         (let [_    (clear-contracts)
               cmd  (or cmd
                        ["ganache" "--wallet.seed" "test" "--host" "0.0.0.0"])]
@@ -87,7 +89,7 @@
                                       :cmd cmd})]
                            (h/wait-for-port (get info :container-ip) +default-port+
                                             {:timeout 10000})
-                           (Thread/sleep 20000)
+                           (Thread/sleep 10000)
                            {:type "ganache"
                             :port +default-port+
                             :root +default-port+
