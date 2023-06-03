@@ -1,6 +1,7 @@
 # statstrade-pay-public
 
-A Clojure library designed to ... well, that part is up to you.
+This project implements the smart contract for the blockchain portion of the centralised clearing house
+
 
 ## Usage
 
