@@ -1,5 +1,6 @@
 (ns statspay.common.env-ganache
   (:require [std.lib :as h :refer [defimpl]]
+            [std.lib.network :as network]
             [std.json :as json]
             [std.string :as str]
             [std.lang :as l]
@@ -76,6 +77,7 @@
                    (h/wait-for-port "127.0.0.1" +default-port+
                                     {:timeout 1000})))
         (let [_    (clear-contracts)
+              _    (h/prn "STARTING GANACHE")
               cmd  (or cmd
                        ["ganache" "--wallet.seed" "test" "--host" "0.0.0.0"])]
           (-> (if (not @*server*)
@@ -88,7 +90,7 @@
                                       :expose  [[+default-port+ +default-port+]]
                                       :cmd cmd})]
                            (h/wait-for-port (get info :container-ip) +default-port+
-                                            {:timeout 10000})
+                                            {:timeout 30000})
                            (Thread/sleep 10000)
                            {:type "ganache"
                             :port +default-port+
