@@ -85,8 +85,10 @@
                                       :image  "ghcr.io/zcaudate/infra-ganache:main"
                                       :expose  [[+default-port+ +default-port+]]
                                       :cmd cmd})]
-                           (h/wait-for-port "127.0.0.1" +default-port+
+                           (h/prn "GANACHE STARTED")
+                           (h/wait-for-port (get info :container-ip) +default-port+
                                             {:timeout 10000})
+                           (h/prn "GANACHE PORT OK")
                            (Thread/sleep 10000)
                            {:type "ganache"
                             :port +default-port+
