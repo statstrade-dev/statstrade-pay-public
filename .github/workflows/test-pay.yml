@@ -17,14 +17,14 @@ jobs:
           repository: zcaudate/foundation-base
           path: foundation-base
           token: ${{ secrets.GH_TOKEN }}
-		  
+
       - name: Checkout statstrade-pay-public
         uses: actions/checkout@v3
         with:
           repository: statstrade-dev/statstrade-pay-public
           path: statstrade-pay-public
           token: ${{ secrets.GH_TOKEN }}
-          
+
       - name: Log into registry ${{ env.REGISTRY }}
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v2
@@ -32,7 +32,7 @@ jobs:
           registry: ghcr.io
           username: ${{ secrets.GH_USER }}
           password: ${{ secrets.GH_TOKEN }}
-        
+ 
       - name: Run statspay tests
         run: >
           docker run --rm --network host -v $(pwd):$(pwd) -w $(pwd) 
