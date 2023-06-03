@@ -9,6 +9,17 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    
+    services:
+      ganache:
+        image: ghcr.io/zcaudate/infra-ganache:main
+        command: ["ganache",
+                  "--gasLimit", "10000000000",
+                  "--chain.allowUnlimitedContractSize",
+                  "--wallet.seed", "test",
+                  "--host", "0.0.0.0"]
+        ports:
+          - 8545:8545
 
     steps: 
       - name: Checkout foundation-base
