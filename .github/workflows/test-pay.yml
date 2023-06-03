@@ -34,7 +34,4 @@ jobs:
           password: ${{ secrets.GH_TOKEN }}
  
       - name: Run Statspay tests
-        run: > 
-          docker run --rm --network host 
-          -v /var/run/docker.sock:/var/run/docker.sock 
-	  -v $(pwd):$(pwd) -w $(pwd) ghcr.io/zcaudate/foundation-ci:main bash -c 'cd statstrade-pay-public && make setup-checkouts && lein test-pay'
+        run: docker run --rm --network host -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):$(pwd) -w $(pwd) ghcr.io/zcaudate/foundation-ci:main bash -c 'cd statstrade-pay-public && make setup-checkouts && lein test-pay'
