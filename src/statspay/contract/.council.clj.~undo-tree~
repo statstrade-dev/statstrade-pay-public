@@ -1,0 +1,5 @@
+(undo-tree-save-format-version . 1)
+"8d7dd1e68a3b1f5c5101bf2310c667c91b23f936"
+[nil nil nil nil (25722 55940 325699 0) 0 nil]
+([nil current ((#("    	" 0 5 (fontified nil help-echo cider--help-echo cider-locals nil cider-block-dynamic-font-lock t)) . -93) (93 . 97) (#("	" 0 1 (fontified nil help-echo cider--help-echo cider-locals nil cider-block-dynamic-font-lock t)) . 93) (89 . 93) 88 (t 25722 55674 495516 843000)) nil (25722 55940 325694 0) 0 nil])
+nil

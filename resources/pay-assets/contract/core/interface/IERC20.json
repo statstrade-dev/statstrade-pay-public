@@ -1,0 +1,98 @@
+{
+  "devdoc" : {
+    "methods" : { },
+    "kind" : "dev",
+    "version" : 1
+  },
+  "abi" : [ {
+    "name" : "balanceOf",
+    "stateMutability" : "view",
+    "outputs" : [ {
+      "internalType" : "uint256",
+      "name" : "",
+      "type" : "uint256"
+    } ],
+    "type" : "function",
+    "inputs" : [ {
+      "internalType" : "address",
+      "name" : "owner",
+      "type" : "address"
+    } ]
+  }, {
+    "name" : "transfer",
+    "stateMutability" : "nonpayable",
+    "outputs" : [ {
+      "internalType" : "bool",
+      "name" : "",
+      "type" : "bool"
+    } ],
+    "type" : "function",
+    "inputs" : [ {
+      "internalType" : "address",
+      "name" : "to",
+      "type" : "address"
+    }, {
+      "internalType" : "uint256",
+      "name" : "value",
+      "type" : "uint256"
+    } ]
+  }, {
+    "name" : "transferFrom",
+    "stateMutability" : "nonpayable",
+    "outputs" : [ ],
+    "type" : "function",
+    "inputs" : [ {
+      "internalType" : "address",
+      "name" : "from",
+      "type" : "address"
+    }, {
+      "internalType" : "address",
+      "name" : "receiver",
+      "type" : "address"
+    }, {
+      "internalType" : "uint256",
+      "name" : "amount",
+      "type" : "uint256"
+    } ]
+  } ],
+  "userdoc" : {
+    "methods" : { },
+    "kind" : "user",
+    "version" : 1
+  },
+  "storageLayout" : {
+    "storage" : [ ],
+    "types" : null
+  },
+  "ewasm" : {
+    "wasm" : ""
+  },
+  "metadata" : "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"temp.sol\":\"IERC20\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"temp.sol\":{\"keccak256\":\"0x7ea86b7bdaf813cd61ac1a8b332731830e7639666a0e667c097d2319951deb8c\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://1a1a47f09a3a638a17774a11df417e5daf8be9a548e34277ea373c3c111fb558\",\"dweb:/ipfs/QmYBL1pBzzasEBU68neoQHDqmYHJXHMdxo1B9u2VGGG74g\"]}},\"version\":1}",
+  "evm" : {
+    "bytecode" : {
+      "object" : "",
+      "functionDebugData" : { },
+      "linkReferences" : { },
+      "opcodes" : "",
+      "sourceMap" : "",
+      "generatedSources" : [ ]
+    },
+    "methodIdentifiers" : {
+      "balanceOf(address)" : "70a08231",
+      "transfer(address,uint256)" : "a9059cbb",
+      "transferFrom(address,address,uint256)" : "23b872dd"
+    },
+    "gasEstimates" : null,
+    "assembly" : "",
+    "legacyAssembly" : null,
+    "deployedBytecode" : {
+      "object" : "",
+      "functionDebugData" : { },
+      "linkReferences" : { },
+      "opcodes" : "",
+      "sourceMap" : "",
+      "generatedSources" : [ ],
+      "immutableReferences" : { }
+    }
+  }
+}
