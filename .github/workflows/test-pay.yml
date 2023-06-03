@@ -13,11 +13,8 @@ jobs:
     services:
       ganache:
         image: ghcr.io/zcaudate/infra-ganache:main
-        command: ["ganache",
-                  "--gasLimit", "10000000000",
-                  "--chain.allowUnlimitedContractSize",
-                  "--wallet.seed", "test",
-                  "--host", "0.0.0.0"]
+        options: >
+          --entrypoint 'ganache --gasLimit 10000000000 --chain.allowUnlimitedContractSize --wallet.seed test --host 0.0.0.0'
         ports:
           - 8545:8545
 
