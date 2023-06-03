@@ -1,5 +1,0 @@
-(undo-tree-save-format-version . 1)
-"fdda5799bf82cf82427a37a9993ee2e7dc46d31d"
-[nil nil nil nil (25722 63007 229397 0) 0 nil]
-([nil current ((3835 . 3882) ("    (eth-lib/get-signer \"http://192.168.0.10:8545\"" . 3835) (3417 . 3471) ("    (eth-lib/new-rpc-provider \"http://192.168.0.10:8545\")" . 3417) (2102 . 2155) ("          (eth-lib/get-signer \"http://192.168.0.10:8545\"" . 2102) (1410 . 1438) ("     \"http://192.168.0.10:8545\"" . 1410) (t 25722 63004 776929 551000)) nil (25722 63007 229393 0) 0 nil])
-nil
