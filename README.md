@@ -3,9 +3,20 @@
 This project implements the smart contract for the blockchain portion of the centralised clearing house
 
 
-## Usage
+## Running Tests
 
-FIXME
+Make sure docker is installed
+
+
+```
+ mkdir test-dir
+ cd    test-dir
+ git clone https://github.com/zcaudate/foundation-base.git
+ git clone https://github.com/statstrade-dev/statstrade-pay-public.git
+ docker run --rm --network host -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):$(pwd) -w $(pwd) ghcr.io/zcaudate/foundation-ci:main bash -c 'cd statstrade-pay-public && make setup-checkouts && lein test-pay'
+
+```
+
 
 ## License
 
