@@ -2,6 +2,8 @@
 
 This project implements the smart contract for the blockchain portion of the centralised clearing house. Video will give a brief overview of functionality.
 
+[![Smart Contract Clearinghouse](https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/view?usp=share_link)](https://github.com/statstrade-dev/statstrade-pay-public/assets/1455572/2381aee6-4363-4a3e-b3aa-0180c1cd05c1)
+
 [![Smart Contract Clearinghouse](https://github.com/statstrade-dev/statstrade-pay-public/assets/1455572/2381aee6-4363-4a3e-b3aa-0180c1cd05c1)](https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/view?usp=share_link)
 
 ## Running Tests - Docker
