@@ -1,8 +1,7 @@
 # statstrade-pay-public
 
-This project implements the smart contract for the blockchain portion of the centralised clearing house. Video will give a brief overview of functionality.
+This project implements the smart contract for the blockchain portion of the centralised clearing house. [Video](https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/view?usp=share_link) will give a brief overview of functionality.
 
-<iframe src="https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Running Tests - Docker
 
@@ -31,7 +30,7 @@ git clone https://github.com/statstrade-dev/statstrade-pay-public.git
 cd foundation-base && lein install && cd ..
 cd statstrade-pay-public
 make setup-checkouts && lein test-pay
-``
+```
 
 ## License
 
