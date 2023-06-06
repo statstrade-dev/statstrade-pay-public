@@ -4,7 +4,6 @@ This project implements the smart contract for the blockchain portion of the cen
 
 [![Smart Contract Clearinghouse](https://github.com/statstrade-dev/statstrade-pay-public/assets/1455572/2381aee6-4363-4a3e-b3aa-0180c1cd05c1)](https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/view?usp=share_link)
 
-
 ## Running Tests - Docker
 
 Make sure docker is installed
