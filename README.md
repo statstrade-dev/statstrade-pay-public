@@ -2,7 +2,7 @@
 
 This project implements the smart contract for the blockchain portion of the centralised clearing house. Video will give a brief overview of functionality.
 
-<video src='https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/view?usp=share_link' width=180></video>
+<iframe src="https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Running Tests - Docker
 
