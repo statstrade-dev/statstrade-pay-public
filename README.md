@@ -1,9 +1,11 @@
 # statstrade-pay-public
 
-This project implements the smart contract for the blockchain portion of the centralised clearing house
+This project implements the smart contract for the blockchain portion of the centralised clearing house. Video will give a brief overview of functionality.
+
+[![Watch the video]([https://github.com/statstrade-dev/statstrade-pay-public/assets/1455572/2381aee6-4363-4a3e-b3aa-0180c1cd05c1])(https://drive.google.com/file/d/18UvfLPTkdFgmhCFeTAbxViSfYX7BFTb8/view?usp=share_link)
 
 
-## Running Tests
+## Running Tests - Docker
 
 Make sure docker is installed
 
@@ -13,14 +15,28 @@ Make sure docker is installed
  cd    test-dir
  git clone https://github.com/zcaudate/foundation-base.git
  git clone https://github.com/statstrade-dev/statstrade-pay-public.git
- docker run --rm --network host -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):$(pwd) -w $(pwd) ghcr.io/zcaudate/foundation-ci:main bash -c 'cd statstrade-pay-public && make setup-checkouts && lein test-pay'
+ docker run --rm --network host -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd):$(pwd) -w $(pwd) zcaudate/foundation-ci:main bash -c 'cd statstrade-pay-public && make setup-checkouts && lein test-pay'
 
 ```
 
+## Running Tests
+
+Make sure node is installed
+
+```
+npm -g install ganache yarn crypto-js ethers@5.7.2 solc@0.8.17
+mkdir test-dir
+cd    test-dir
+git clone https://github.com/zcaudate/foundation-base.git
+git clone https://github.com/statstrade-dev/statstrade-pay-public.git
+cd foundation-base && lein install && cd ..
+cd statstrade-pay-public
+make setup-checkouts && lein test-pay
+``
 
 ## License
 
-Copyright © 2023 FIXME
+Copyright © 2023 Chris Zheng
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
